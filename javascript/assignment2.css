@@ -1,0 +1,118 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+/* general text formatting */
+
+h1, h2, h3, nav, footer {
+	font-family: Lobster, Cambria, "Times New Roman", serif;
+}
+
+body {
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	font-size: 100%;
+	background-color: #E8EAF6;
+}
+
+
+/* header and navigation */
+header, footer {
+	color: white;
+	background-color: #303F9F;
+}
+
+header h1 { 
+	padding: 1rem 0 0.5rem 1.75rem;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+header p { 
+	font-size: 1rem;
+	font-style: italic;
+	margin-bottom: 1rem;
+	padding: 0 0 0 1.25rem;
+}
+
+nav {
+	float: right;
+	padding-right: 2.9rem;
+	margin-bottom: 1rem;
+}
+
+button.menu{
+	background-image: url(images/menu.png);
+	width: 22px;
+	height: 22px;
+	border: none;
+	outline: none;
+}
+
+content {
+	display: none;
+    position: absolute;
+}
+
+content a{
+	color: black;
+    padding: 1rem 1rem;
+    display: block;
+	font-size: 1rem;
+	text-decoration: none;
+}
+
+content a:hover{
+	background-color: #DDD;
+}
+
+nav:hover content{
+	display: block;
+}
+
+
+/* main article styling */
+main {
+	margin-top: 2rem;
+}
+
+#thumbnails{
+	margin: 0.5rem;
+}
+
+#thumbnails img {
+	cursor: pointer;
+	padding: 0.2rem;
+	margin-right: 1rem;
+	background-color: white;
+}
+
+#figure {
+	margin: 0.5rem;
+	background-color: white;
+	padding: 00.5rem;
+	width: 855px;
+	height: 642px;
+	position: relative;
+}
+
+#figure img {
+	width: 855px;
+	height: 642px;
+}
+
+#caption {
+	position: absolute;
+	top: 75%;
+	font-size: 2rem;
+	width: 49%;
+	padding-left: 49.56%;
+	height: 5.6875rem;
+	background-color: white;
+	opacity: 0;
+}
+
+#figure, #thumbnails img {
+	border-radius: 5px;
+    border: 1px solid #DDD;
+}
+
+
